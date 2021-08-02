@@ -1,0 +1,10 @@
+.fs-16
+{
+    font-size: 16pt; /*pontos do word/excel */
+}
+a{
+cursor: pointer;
+}
+#sair{
+color: aqua;
+}
