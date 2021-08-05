@@ -10,7 +10,9 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HashLocationStrategy,LocationStrategy } from '@angular/common';
-import { TemaComponent } from './tema/tema.component'; /*importando para referencia uma tag com a outra e evitar erro 404*/
+import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'; /*importando para referencia uma tag com a outra e evitar erro 404*/
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { TemaComponent } from './tema/tema.component'; /*importando para referen
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
-    TemaComponent
+    TemaComponent,
+    TemaEditComponent,
+    TemaDeleteComponent
   ],
   imports: [
     BrowserModule,
