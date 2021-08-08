@@ -1,3 +1,8 @@
+body{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
 .fs-16
 {
     font-size: 16pt; /*pontos do word/excel */
@@ -6,5 +11,8 @@ a{
 cursor: pointer;
 }
 #sair{
-color: aqua;
+    position:absolute;
+    right: 0;
+    width:300px;
+    text-align: right;
 }
