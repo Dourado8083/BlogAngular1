@@ -12,7 +12,10 @@ import { InicioComponent } from './inicio/inicio.component';
 import { HashLocationStrategy,LocationStrategy } from '@angular/common';
 import { TemaComponent } from './tema/tema.component';
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
-import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'; /*importando para referencia uma tag com a outra e evitar erro 404*/
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
+import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { UserEditComponent } from './edit/user-edit/user-edit.component'; /*importando para referencia uma tag com a outra e evitar erro 404*/
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
     InicioComponent,
     TemaComponent,
     TemaEditComponent,
-    TemaDeleteComponent
+    TemaDeleteComponent,
+    PostagemEditComponent,
+    PostagemDeleteComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,

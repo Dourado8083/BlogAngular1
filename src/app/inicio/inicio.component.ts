@@ -30,6 +30,7 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
     if (environment.token == '') {
       /*verifica se o token esta vazio
       alert('Sua Sessão expirou,faça o login novamente.') */

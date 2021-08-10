@@ -16,8 +16,16 @@ export class PostagemService {
   getAllPostagens(): Observable<Postagem[]>{
   return this.http.get<Postagem[]>('http://localhost:8081/postagens',this.token)
   }
+  getByIdPostagem(id: number):Observable<Postagem>{
+  return  this.http.get<Postagem>(`http://localhost:8081/postagens${id}`,this.token)
+  }
   postPostagem(postagem:Postagem):Observable<Postagem>{
     return this.http.post<Postagem>('http://localhost:8081/postagens',postagem, this.token)
-
+  }
+  putPostagem(postagem:Postagem):Observable<Postagem>{
+  return this.http.put<Postagem>('http://localhost:8081/postagens',postagem,this.token)
+  }
+  deletePostagem(id:number){
+  return this.http.delete(`http://localhost:8081/postagens${id}`,this.token)
   }
 }
